@@ -8,6 +8,12 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="client.min.js"></script>
+  <script>
+    var client = new ClientJS();
+    var fingerprint = client.getFingerprint(); // Calculate Device/Browser Fingerprint
+    alert( fingerprint );
+  </script>
   <style>
   .bg-1 { 
       background-color: #1abc9c; /* Green */
