@@ -20,6 +20,7 @@
     "socket.io": "1.7.3",
     "node": "0.0.0",
     "express-fingerprint": "1.1.1",
-    "express": "4.15.2"
+    "express": "4.15.2",
+    "firebase": "3.7.3"
     }
 }
