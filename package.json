@@ -1,0 +1,25 @@
+{
+  "name": "project-narnia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamsawamsa/Project-Narnia.git"
+  },
+  "author": "james",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamsawamsa/Project-Narnia/issues"
+  },
+  "homepage": "https://github.com/jamsawamsa/Project-Narnia#readme",
+  "dependencies": {
+    "socket.io": "1.7.3",
+    "node": "0.0.0",
+    "express-fingerprint": "1.1.1",
+    "express": "4.15.2"
+    }
+}
