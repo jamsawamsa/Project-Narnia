@@ -8,12 +8,6 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="client.min.js"></script>
-  <script>
-    var client = new ClientJS();
-    var fingerprint = client.getFingerprint(); // Calculate Device/Browser Fingerprint
-    alert( fingerprint );
-  </script>
   <style>
   .bg-1 { 
       background-color: #1abc9c; /* Green */
@@ -24,12 +18,12 @@
   .bg-2 { 
       background-color: #474e5d; /* Dark Blue */
       color: #ffffff;
-      height: 324px;
+      height: 314px;
   }
   .bg-3 { 
       background-color: lightblue; /* White */
-      color: white;
-      height: 310px;
+      color: #555555;
+      height: 300px;
   }
 
   .margin {
@@ -66,7 +60,8 @@
   <div class="container-fluid bg-3 text-center"> 
     <p> Do this !</p>
   </div>
-
+  <script src="./socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
 </body>
 
 </html>
