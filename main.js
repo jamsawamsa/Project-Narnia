@@ -4,21 +4,21 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io').listen(server)
 
-// app.use(Fingerprint({
-//     parameters:[
-//         // Defaults 
-//         Fingerprint.useragent,
-//         Fingerprint.acceptHeaders,
-//         Fingerprint.geoip
-//     ]
-// }))
+app.use(Fingerprint({
+    parameters:[
+        // Defaults 
+        Fingerprint.useragent,
+        Fingerprint.acceptHeaders,
+        Fingerprint.geoip
+    ]
+}))
 app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res, next) {
   res.sendFile(__dirname + '/index.html')
 });
 app.get('*',function(req,res,next) {
-    // Fingerprint object 
-    console.log(req.fingerprint)
+    // Fingerprint object
+    console.log(req.fingerprint.hash);
 })
 
 io.on('connection', function (client) {
